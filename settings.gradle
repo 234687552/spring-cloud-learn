@@ -1,4 +1,5 @@
 rootProject.name = 'spring-cloud-learn'
 include 'eureka-server'
 include 'provider-server'
+include 'consumer-server'
 
