@@ -25,9 +25,14 @@ repositories {
 
 ext {
     springCloudVersion = 'Dalston.SR4'
+    swaggerVersion='2.6.0'
 }
 
 dependencies {
+    //swagger
+    compile("io.springfox:springfox-swagger-ui:${swaggerVersion}")
+    compile("io.springfox:springfox-swagger2:${swaggerVersion}")
+
     compile('org.springframework.cloud:spring-cloud-starter-eureka')
     compileOnly('org.projectlombok:lombok')
     testCompile('org.springframework.boot:spring-boot-starter-test')
